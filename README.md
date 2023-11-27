@@ -1,2 +1,0 @@
-# MISOGYNY-IN-CHINESE
- 
