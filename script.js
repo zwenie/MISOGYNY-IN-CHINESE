@@ -43,3 +43,17 @@ console.log('Width:', entry.contentRect.width);
 
 // observe the given element for changes 
 resizeObserver.observe(boxElem); 
+
+function handleResize() {
+    // Check if the screen width is 800px
+    if (window.innerWidth === 900) {
+        // Trigger the print function
+        window.print();
+    }
+}
+
+// Attach the handleResize function to the resize event
+window.addEventListener('resize', handleResize);
+
+// Initial check on page load
+handleResize();
